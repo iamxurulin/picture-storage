@@ -1,0 +1,9 @@
+# 所有文本文件自动处理换行符（仓库里统一 LF）
+* text=auto
+
+# SVG 文件强制用 LF（因为它们通常来自跨平台资源）
+*.svg text eol=lf
+
+# 如果有 .bat / .cmd 等 Windows 脚本，可以强制 CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
